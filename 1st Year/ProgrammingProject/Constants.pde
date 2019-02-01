@@ -1,0 +1,16 @@
+final int USER_ID_INDEX = 0;
+final int USER_NAME_INDEX = 1;
+final int BUSINESS_ID_INDEX = 2;
+final int BUSINESS_NAME_INDEX = 3;
+final int STARS_INDEX = 4;
+final int DATE_INDEX = 5;
+final int TEXT_INDEX = 6;
+final int USEFUL_INDEX = 7;
+final int FUNNY_INDEX = 8;
+final int COOL_INDEX = 9;
+final int EVENT_NULL = 0;
+final int EVENT_BUTTON1=1;
+final int EVENT_BUTTON2=2;
+final int EVENT_BUTTON3=3;
+final int EVENT_BUTTON4=4;
+final int EVENT_BUTTON5=5;
