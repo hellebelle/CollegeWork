@@ -1,0 +1,6 @@
+Q3 - I have used the time library in python. This library contains process_time()
+which returns the float value of time in seconds. The time before and after executing
+ackermann(3,6) is recorded and the difference is the total time it takes to calculate 
+the function. The program was run 1000 times and the average time was calculated to 
+provide a more accurate result.
+   
