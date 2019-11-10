@@ -1,31 +1,26 @@
+%{
+    #include "romans.tab.h"
+    void yyerror(char *s);
+%}
 WS	[ \t]+
 
 %%
-	int total=0;
+	
 
-I	total += 1;
-IV	total += 4;
-V	total += 5;
-IX	total += 9;
-X	total += 10;
-XL	total += 40;
-L	total += 50;
-XC	total += 90;
-C	total += 100;
-CD	total += 400;
-D	total += 500;
-CM	total += 900;
-M	total += 1000;
+I	{yylval = 1; return ONE;}
+IV	{yylval = 4; return FOUR;}
+V	{yylval = 5; return FIVE;}
+IX	{yylval = 9; return NINE;}
+X	{yylval = 10; return TEN;}
+XL	{yylval = 40; return FORTY;}
+L	{yylval = 50; return FIFTY;}
+XC	{yylval = 90; return NINETY;}
+C	{yylval = 100; return HUNDRED;}
+CD	{yylval = 400; return FOUR_HUNDRED;}
+D	{yylval = 500; return FIVE_HUNDRED;}
+CM	{yylval = 900; return NINE_HUNDRED;}
+M	{yylval = 1000; return THOUSAND;}	
 
-{WS}	|
-\n	return total;
+\n	{return EOL;}
+{WS} {}
 %%
-int main (void) {
-   int first, second;
-
-   first = yylex ();
-   second = yylex ();
-
-   printf ("%d + %d = %d\n", first, second, first+second);
-   return 0;
-   }
