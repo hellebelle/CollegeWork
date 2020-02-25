@@ -1,5 +1,3 @@
-
-
 :- dynamic(kb/1).
 makeKB(File):-  open(File,read,Str),
                 readK(Str,K),
