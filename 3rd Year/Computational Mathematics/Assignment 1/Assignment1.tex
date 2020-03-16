@@ -1,0 +1,50 @@
+\documentclass{article}
+\begin{document}
+    Hello World!
+\end{document}
+% Q2.31(a)
+% \begin{equation}
+%     \begin{aligned}
+%     &A=\left[\begin{array}{lll}
+%     {1} & {5} & {4} \\
+%     {2} & {3} & {6} \\
+%     {1} & {1} & {1}
+%     \end{array}\right]\\
+%     &|A|=1 \cdot\left|\begin{array}{ll}
+%     {3} & {6} \\
+%     {1} & {1}
+%     \end{array}\right|-5 \cdot\left|\begin{array}{ll}
+%     {2} & {6} \\
+%     {1} & {1}
+%     \end{array}\right|+4 \cdot\left|\begin{array}{ll}
+%     {2} & {6} \\
+%     {1} & {1}
+%     \end{array}\right|\\
+%     &=13
+%     \end{aligned}
+%     \end{equation}
+% % Q2.31(b)
+% \(\operatorname{det}\left(\begin{array}{cccc}{1} & {2} & {3} & {4} \\ {5} & {6} & {7} & {8} \\ {9} & {10} & {11} & {12} \\ {13} & {14} & {15} & {16}\end{array}\right)\)
+% Reduce matrix to row echelon form \(\left(\begin{array}{ccc}{a} & {\cdots} & {b} \\ {0} & {\ddots} & {\vdots} \\ {0} & {0} & {c}\end{array}\right)\)
+% \(\left(\begin{array}{cccc}{1} & {2} & {3} & {4} \\ {5} & {6} & {7} & {8} \\ {9} & {10} & {11} & {12} \\ {13} & {14} & {15} & {16}\end{array}\right)\)
+% Swap matrix rows: \(R_{1} \leftrightarrow R_{4}\)
+% \(=\left(\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {5} & {6} & {7} & {8} \\ {9} & {10} & {11} & {12} \\ {1} & {2} & {3} & {4}\end{array}\right)\)
+
+% Cancel leading coefficient in row \(R_{2}\) by performing \(R_{2} \leftarrow R_{2}-\frac{5}{13} \cdot R_{1}\)
+% \(=\left(\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {0} & {\frac{8}{13}} & {\frac{16}{13}} & {\frac{24}{13}} \\ {9} & {10} & {11} & {12} \\ {1} & {2} & {3} & {4}\end{array}\right)\)
+% Cancel leading coefficient in row \(R_{3}\) by performing \(R_{3} \leftarrow R_{3}-\frac{9}{13} \cdot R_{1}\)
+% \(=\left|\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {0} & {\frac{8}{13}} & {\frac{16}{13}} & {\frac{24}{13}} \\ {0} & {\frac{4}{13}} & {\frac{8}{13}} & {\frac{12}{13}} \\ {1} & {2} & {3} & {4}\end{array}\right|\)
+% Cancel leading coefficient in row \(R_{4}\) by performing \(R_{4} \leftarrow R_{4}-\frac{1}{13} \cdot R_{1}\)
+% \(=\left|\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {0} & {\frac{8}{13}} & {\frac{16}{13}} & {\frac{24}{13}} \\ {0} & {\frac{4}{13}} & {\frac{8}{13}} & {\frac{12}{13}} \\ {0} & {\frac{12}{13}} & {\frac{24}{13}} & {\frac{36}{13}}\end{array}\right|\)
+
+% Swap matrix rows: \(R_{2} \leftrightarrow R_{4}\)
+% \(=\left|\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {0} & {\frac{12}{13}} & {\frac{24}{13}} & {\frac{36}{13}} \\ {0} & {\frac{4}{13}} & {\frac{8}{13}} & {\frac{12}{13}} \\ {0} & {\frac{8}{13}} & {\frac{16}{13}} & {\frac{24}{13}}\end{array}\right|\)
+% Cancel leading coefficient in row \(R_{3}\) by performing \(R_{3} \leftarrow R_{3}-\frac{1}{3} \cdot R_{2}\) \(=\left|\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {0} & {\frac{12}{13}} & {\frac{24}{13}} & {\frac{36}{13}} \\ {0} & {0} & {0} & {0} \\ {0} & {\frac{8}{13}} & {\frac{16}{13}} & {\frac{24}{13}}\end{array}\right|\)
+% \(=\left(\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {0} & {\frac{12}{13}} & {\frac{24}{13}} & {\frac{36}{13}} \\ {0} & {0} & {0} & {0} \\ {0} & {0} & {0} & {0}\end{array}\right)\)
+% \(=\left(\begin{array}{cccc}{13} & {14} & {15} & {16} \\ {0} & {\frac{12}{13}} & {\frac{24}{13}} & {\frac{36}{13}} \\ {0} & {0} & {0} & {0} \\ {0} & {0} & {0} & {0}\end{array}\right)\)
+
+% The determinant of the matrix equals the diagonal product of the matrix
+% \(=0\)
+% Interchanging rows negate the determinate, therefore multiply the result by \((-1)^{2}\) \(=(-1)^{2} \cdot 0\)
+% \((-1)^{2} \cdot 0=0\)
+% \(=0\)
